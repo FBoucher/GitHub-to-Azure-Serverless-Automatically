@@ -32,7 +32,7 @@
         },
         "OwnerName":{
             "type":"string",
-            "defaultValue":"",
+            "defaultValue":"unknow",
             "metadata": {
                 "description": "Owner of this deployment, person to contact for question."
             }
