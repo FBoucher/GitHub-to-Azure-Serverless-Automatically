@@ -18,7 +18,7 @@
         },
         "GitHubURL": {
            "type": "string",
-           "defaultValue": "https://github.com/microsoft/ignite-learning-paths-training-afun.git",
+           "defaultValue": "https://github.com/FBoucher/GitHub-to-Azure-Serverless-Automatically.git",
            "metadata": {
                 "description": "The URL of GitHub (ending by .git)"
             }
@@ -49,7 +49,7 @@
         "workflowName": "[toLower(concat(parameters('baseName'), 'workflow', variables('suffix')))]",
         "workflowFinalName": "[toLower(concat('Final', parameters('baseName'), 'workflow', variables('suffix')))]",
         "connections_onedrive_externalid": "[concat(subscription().Id, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/onedrive')]",
-        "functionProjectFolder": "afun95/demos/functionapp-demo",
+        "functionProjectFolder": "demos/functionapp-demo",
         "finalAzFuncHttpTriggerID": "[concat(subscription().Id, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('funcAppFinalName'), '/functions/SimpleHttpTrigger')]"
     },
     "resources": [
@@ -173,7 +173,7 @@
                         },
                         {
                             "name": "PROJECT",
-                            "value": "afun/afun95/functionapp-demo"
+                            "value": "demos/functionapp-demo"
                         }
                     ]
                 },

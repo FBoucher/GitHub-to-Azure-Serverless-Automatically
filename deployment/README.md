@@ -1,4 +1,4 @@
-# AFUN95 Deployment
+# Deployment
 
 ## Prerequisites
 
@@ -7,9 +7,9 @@
 
 ### Azure Subscription
 
-Having an Azure subscription is mandatory to be able to do the *AFUN95: Figuring Out Azure Functions​*. If you don't own an Azure subscription already, you can create your **free** account today. It comes with 200$ credit, so you can experience almost everything without spending a dime.
+Having an Azure subscription is mandatory to be able to do this *GitHub to Azure Serverless Automatically*. If you don't own an Azure subscription already, you can create your **free** account today. It comes with 200$ credit, so you can experience almost everything without spending a dime.
 
-[Create your free Azure account today](https://azure.microsoft.com/en-us/free?WT.mc_id=msignitethetour2019-github-afun95)
+[Create your free Azure account today](https://azure.microsoft.com/en-us/free?WT.mc_id=frbouche-github-event)
 
 ### GitHub
 

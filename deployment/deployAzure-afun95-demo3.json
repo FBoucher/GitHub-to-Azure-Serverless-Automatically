@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "baseName": {
-            "defaultValue": "afun95demo",
+            "defaultValue": "serverlessfrank",
             "type": "string",
             "metadata": {
                 "description": "Name use as base-template to named the resources deployed in Azure."
@@ -18,7 +18,7 @@
         },
         "GitHubURL": {
             "type": "string",
-            "defaultValue": "https://github.com/microsoft/ignite-learning-paths-training-afun.git",
+            "defaultValue": "https://github.com/FBoucher/GitHub-to-Azure-Serverless-Automatically.git",
             "metadata": {
                 "description": "The URL of GitHub (ending by .git)"
             }
@@ -30,7 +30,7 @@
         "funcStorageName": "[tolower(concat(substring(parameters('baseName'), 0, min(length(parameters('baseName')),16)), 'stg', variables('suffix')))]",
         "serverFarmName": "[concat(substring(parameters('baseName'), 0, min(length(parameters('baseName')),14)), '-srv-', variables('suffix'))]",
         "repoURL": "[parameters('GitHubURL')]",
-        "functionProjectFolder": "afun95/demos/functionapp-demo",
+        "functionProjectFolder": "demos/functionapp-demo",
         "storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('funcStorageName'))]"
     },
     "resources": [
