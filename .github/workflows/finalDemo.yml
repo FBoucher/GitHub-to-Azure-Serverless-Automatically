@@ -1,0 +1,50 @@
+name: CI-Dev
+
+env:
+  AZURE_WEBAPP_NAME: frankfuncdemo2   # set this to your application's name
+  AZURE_GROUP_NAME: frankfuncdemo2
+
+on: [push]
+
+jobs:
+  build-and-deploy:
+
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@master
+
+    #- name: Setup .NET Core
+    #  uses: actions/setup-dotnet@v1
+    #  with:
+    #    dotnet-version:  3.1.100
+
+
+    # dotnet build and publish
+    #- name: Build with dotnet
+    #  run: dotnet build ./src --configuration Release
+    #- name: dotnet publish 
+    #  run: |
+    #    dotnet publish ./src -c Release -o myapp 
+
+    - name: Az login and create resources
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - run: |
+        az group create -n ${{ env.AZURE_GROUP_NAME }} -l eastus 
+        az group deployment create -n ghaction -g ${{ env.AZURE_GROUP_NAME }} --template-file deployment/deployAzure.json  
+
+
+    # deploy web app using Azure credentials
+    #- name: 'Azure webapp deploy'
+    #  uses: azure/webapps-deploy@v1
+    #  with:
+    #    app-name: ${{ env.AZURE_WEBAPP_NAME }}
+    #    package: './myapp' 
+
+    # Azure logout 
+    - name: Az logout
+      run: |
+        az logout
