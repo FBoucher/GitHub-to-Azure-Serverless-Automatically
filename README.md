@@ -1,4 +1,4 @@
-# GitHub to Azure Serverless Automatically
+# Figuring out Azure Serverless
 
 [![Deploy to Azure](https://img.shields.io/badge/Deploy%20To-Azure-blue?logo=microsoft-azure)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fignite-learning-paths-training-afun%2Fmaster%2Fafun95%2Fdeployment%2FdeployAzure.json?WT.mc_id=frbouche-github-event) 
 
@@ -11,7 +11,7 @@ Azure Function and Azure Logic Apps are part of the Serverless offer from Micros
 
 | Resources              | Links                            |
 |------------------------|----------------------------------|
-| PowerPoint             | - [GitHub to Azure Serverless Automatically.pptx](presentation/GitHub to Azure Serverless Automatically.pptx) |
+| Presentation           | [slides](presentation/How-Can-I-Use-Azure-Serverless-Services-in-My-Projects.pptx) |
 | Pre-Session Deployment | [Deployment](deployment/README.md) |
 | Demos                  | - [Demo 1 - Create an Azure Logic App](demos/readme.md#demo-1---Azure-logic-app-demo)            <br/>- [Demo 2 - Create a JavaScript Azure Function](demos/readme.md#demo-2---javascript-function-demo)<br/>- [Demo 3 - Deploying Azure Function from GitHub](demos/readme.md#demo-3---deploying-from-github-demo) <br/>- [Demo 4 - Using Azure Function with Azure Logic App](demos/readme.md#demo-4---using-azure-function-with-azure-logic-app) |
 
@@ -32,3 +32,4 @@ Detailed explanations of each demonstration associated with this presentation ca
 
 ## Feedback / Questions ?
 
+Reach out on social media or use the GitHub [issues](https://github.com/FBoucher/GitHub-to-Azure-Serverless-Automatically/issues)
